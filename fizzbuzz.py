@@ -27,15 +27,22 @@
 # ]
 
 
-def FizzBuzz(n):
-    for i in range (1, n+1):
-        if i % 15 == 0:
-	    print("FizzBuzz")
-	elif i % 3 == 0:
-	    print("Fizz")
-	elif i % 5 == 0:
-	    print("Buzz")
-	else:
-	    print(i)
-			
-FizzBuzz(15)
+class Solution:
+    def fizzBuzz(self, n):
+        """
+        :type n: int
+        :rtype: List[str]
+        """
+        result = []
+        
+        for i in range(1, n+1):
+            if i % 15 == 0:
+                result.append("FizzBuzz")
+            elif i % 5 == 0:
+                result.append("Buzz")
+            elif i % 3 == 0:
+                result.append("Fizz")
+            else:
+                result.append(str(i))
+                
+        return result
