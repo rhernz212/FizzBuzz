@@ -29,7 +29,7 @@
 
 def FizzBuzz(n):
     for i in range (1, n+1):
-        if i % 3 == 0 and i % 5 == 0:
+        if i % 15 == 0:
 	    print("FizzBuzz")
 	elif i % 3 == 0:
 	    print("Fizz")
@@ -38,4 +38,4 @@ def FizzBuzz(n):
 	else:
 	    print(i)
 			
-FizzBuzz(100)
+FizzBuzz(15)
